@@ -11,6 +11,8 @@
 		E4BF4EE52BAC841500D6E93C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF4EE42BAC841500D6E93C /* ContentView.swift */; };
 		E4BF4EE72BAC841900D6E93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BF4EE62BAC841900D6E93C /* Assets.xcassets */; };
 		E4BF4EEA2BAC841900D6E93C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BF4EE92BAC841900D6E93C /* Preview Assets.xcassets */; };
+		E4BF4EF12BACA15A00D6E93C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF4EF02BACA15A00D6E93C /* Card.swift */; };
+		E4BF4EF32BACA2DF00D6E93C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF4EF22BACA2DF00D6E93C /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E4BF4EE42BAC841500D6E93C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4BF4EE62BAC841900D6E93C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4BF4EE92BAC841900D6E93C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4BF4EF02BACA15A00D6E93C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E4BF4EF22BACA2DF00D6E93C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				E4BF4EE22BAC841500D6E93C /* MemoryGameApp.swift */,
 				E4BF4EE42BAC841500D6E93C /* ContentView.swift */,
+				E4BF4EF22BACA2DF00D6E93C /* CardView.swift */,
+				E4BF4EF42BACA2E600D6E93C /* Models */,
 				E4BF4EE62BAC841900D6E93C /* Assets.xcassets */,
 				E4BF4EE82BAC841900D6E93C /* Preview Content */,
 			);
@@ -65,6 +71,14 @@
 				E4BF4EE92BAC841900D6E93C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4BF4EF42BACA2E600D6E93C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4BF4EF02BACA15A00D6E93C /* Card.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BF4EE52BAC841500D6E93C /* ContentView.swift in Sources */,
+				E4BF4EF12BACA15A00D6E93C /* Card.swift in Sources */,
+				E4BF4EF32BACA2DF00D6E93C /* CardView.swift in Sources */,
 				E4BF4EE32BAC841500D6E93C /* MemoryGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
