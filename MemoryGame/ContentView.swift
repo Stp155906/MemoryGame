@@ -20,7 +20,7 @@ struct ContentView: View {
         // Assuming bobaImages is an array of Strings.
         let bobaImages = (1...6).map { "BobaTeaDrink\($0)" }
         cards = bobaImages.flatMap { image -> [Card] in
-            [Card(content: image), Card(content: image)]
+            [Card(content: image)]
         }.shuffled()
     }
 
