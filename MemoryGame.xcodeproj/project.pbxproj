@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4B056F32BB1BC1100EF1244 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B056F22BB1BC1100EF1244 /* GameViewModel.swift */; };
 		E4BF4EE32BAC841500D6E93C /* MemoryGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF4EE22BAC841500D6E93C /* MemoryGameApp.swift */; };
 		E4BF4EE52BAC841500D6E93C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF4EE42BAC841500D6E93C /* ContentView.swift */; };
 		E4BF4EE72BAC841900D6E93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BF4EE62BAC841900D6E93C /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4B056F22BB1BC1100EF1244 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		E4BF4EDF2BAC841500D6E93C /* MemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BF4EE22BAC841500D6E93C /* MemoryGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameApp.swift; sourceTree = "<group>"; };
 		E4BF4EE42BAC841500D6E93C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BF4EF02BACA15A00D6E93C /* Card.swift */,
+				E4B056F22BB1BC1100EF1244 /* GameViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				E4BF4EE52BAC841500D6E93C /* ContentView.swift in Sources */,
 				E4BF4EF12BACA15A00D6E93C /* Card.swift in Sources */,
 				E4BF4EF32BACA2DF00D6E93C /* CardView.swift in Sources */,
+				E4B056F32BB1BC1100EF1244 /* GameViewModel.swift in Sources */,
 				E4BF4EE32BAC841500D6E93C /* MemoryGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

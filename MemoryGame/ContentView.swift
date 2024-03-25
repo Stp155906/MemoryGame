@@ -7,39 +7,28 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
-    
-    // this initializes an array with your boba images, assuming you have 6 unique images named "bobateadrink1" to "bobateadrink6".
-    
-    let bobaimages = (1...6).map { "BobaTeaDrink\($0)" }
-    var cards: [Card] = []
-    
-    let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
-    
-    init() {
-        // Assuming bobaImages is an array of Strings.
-        let bobaImages = (1...6).map { "BobaTeaDrink\($0)" }
-        cards = bobaImages.flatMap { image -> [Card] in
-            [Card(content: image)]
-        }.shuffled()
-    }
+    @ObservedObject var viewModel: GameViewModel
 
-    
-    
-    
     var body: some View {
-        VStack {
-            
-
-            LazyVGrid(columns: columns, content: {
-                ForEach(cards) { card in CardView(card: card)
+        ScrollView {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
+                ForEach(viewModel.cards) { card in
+                    CardView(card: card)
+                        .aspectRatio(2/3, contentMode: .fit)
+                        .onTapGesture {
+                            viewModel.choose(card: card)
+                        }
                 }
-            })
+            }
+            .foregroundColor(.black)
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 
-#Preview {
-    ContentView()
-}
+
+//#Preview {
+//    ContentView(viewModel: GameViewModel)
+//}

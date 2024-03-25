@@ -6,12 +6,11 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Card: Identifiable {
-    var id =   UUID()
+    var id: Int
     var isFaceUp: Bool = false
     var isMatched: Bool = false
-    var content: Image
+    var content: String // For simplicity, we’re using a String to represent the content. This could be an image name or any other type of identifier.
 }
 
