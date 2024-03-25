@@ -23,12 +23,21 @@ class GameViewModel: ObservableObject {
 
     // Function to handle the card selection logic
     func choose(card: Card) {
-        if let chosenIndex = cards.firstIndex(where: { $0.id == card.id }) {
-            var chosenCard = cards[chosenIndex]
-            chosenCard.isFaceUp.toggle()
-            cards[chosenIndex] = chosenCard // Reassign the card to the array to trigger the view update
+        if let chosenIndex = cards.firstIndex(where: { $0.id == card.id }),
+           !cards[chosenIndex].isFaceUp,
+           !cards[chosenIndex].isMatched {
+            
+            for index in cards.indices {
+                if cards[index].content == card.content && cards[index].isFaceUp {
+                    cards[chosenIndex].isMatched = true
+                    cards[index].isMatched = true
+                }
+            }
+            cards[chosenIndex].isFaceUp.toggle()
+            objectWillChange.send()
         }
     }
+
 
 
 

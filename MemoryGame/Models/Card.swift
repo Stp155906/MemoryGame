@@ -14,3 +14,4 @@ struct Card: Identifiable {
     var content: String // For simplicity, we’re using a String to represent the content. This could be an image name or any other type of identifier.
 }
 
+
